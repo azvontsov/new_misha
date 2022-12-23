@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="../src/css/solar.css"">
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Solar system -->
+    <section id="solar" class="pt-10">
+      <nav class="container mx-auto p-10">
+        <!-- Flex container -->
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="pt-2 z-100">
+            <img
+              id="logo"
+              class="logo-link"
+              src="../src/assets/images/logo.PNG"
+              alt="logo"
+            />
+          </div>
+          <!-- Menu items -->
+          <div class="hidden md:flex space-x-6 z-100">
+            <a class="menu-link" href="#">Drawings</a>
+            <a class="menu-link" href="#">Animation</a>
+            <a class="menu-link" href="#">Store</a>
+            <a class="menu-link" href="#">About</a>
+            <a class="menu-link" href="#">Contact</a>
+          </div>
+
+          <!-- Hamburger Icon -->
+          <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none z-100"
+          >
+            <span class="hamburger-top">
+              <svg>
+                <path
+                  d="M21.2506 0.586295C22.7298 0.272275 27.4072 -0.938768 25.5847 1.44626L17.2029 2.62515L9.86091 3.80306C6.87485 3.26382 9.18456 2.67074 5.56564 3.98344C4.482 3.91107 0.0819551 4.25599 0 3.48881C0.493045 1.94925 1.35126 1.58333 2.52984 1.94915C3.54177 2.26325 10.354 1.94915 10.847 1.94915C11.2414 1.94915 19.7715 0.900314 21.2506 0.586295Z"
+                  fill="#F6AE4B"
+                />
+              </svg>
+            </span>
+            <span class="hamburger-middle">
+              <svg>
+                <path
+                  d="M12.3575 0.734474C10.8958 0.50345 -1.62424 1.24534 0.176775 3H8.4597L16.2554 1.86729C19.2062 1.47058 20.9621 1.46789 24.5383 2.43365C25.6092 2.3804 25.919 2.20051 26 1.6361C25.5128 0.50345 22.8817 1.40964 22.1022 0.503456C21.1277 -0.629272 15.7682 0.503375 15.2809 0.503375C14.8911 0.503375 13.8192 0.965497 12.3575 0.734474Z"
+                  fill="#F6AE4B"
+                />
+              </svg>
+            </span>
+            <span class="hamburger-bottom">
+              <svg>
+                <path
+                  d="M13.6425 0.734474C15.1042 0.50345 27.6242 1.24534 25.8232 3H17.5403L9.74461 1.86729C6.79377 1.47058 5.03793 1.46789 1.46169 2.43365C0.390837 2.3804 0.0809885 2.20051 0 1.6361C0.487231 0.50345 3.11828 1.40964 3.89785 0.503456C4.87231 -0.629272 10.2318 0.503375 10.7191 0.503375C11.1089 0.503375 12.1808 0.965497 13.6425 0.734474Z"
+                  fill="#F6AE4B"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold rounded-xl bg-slate-700 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md z-100"
+          >
+            <a class="menu-link" href="#">Drawings</a>
+            <a class="menu-link" href="#">Animation</a>
+            <a class="menu-link" href="#">Store</a>
+            <a class="menu-link" href="#">About</a>
+            <a class="menu-link" href="#">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <div class="solar-syst pt-80">
+          <div class="rocket">
+            <img
+              class="rocket-img"
+              src="../src/assets/images/planets/rocket.png"
+            />
+          </div>
+          <div class="sun">
+            <img class="sun-img" src="../src/assets/images/planets/sun.png" />
+          </div>
+          <div class="sun-shine"></div>
+          <div class="mercury"></div>
+          <div class="venus"></div>
+          <div class="earth"></div>
+          <div class="planet1">
+            <img
+              class="planet1-img"
+              src="../src/assets/images/planets//planet1.png"
+            />
+          </div>
+
+          <div class="planet2">
+            <img
+              class="planet2-img"
+              src="../src/assets/images/planets/planet2.png"
+            />
+          </div>
+          <div class="planet3">
+            <img
+              class="planet3-img"
+              src="../src/assets/images/planets/planet3.png"
+            />
+          </div>
+          <div class="mars"></div>
+          <div class="jupiter"></div>
+          <div class="saturn"></div>
+          <div class="uranus"></div>
+          <div class="neptune"></div>
+          <div class="pluto"></div>
+          <div class="asteroids-belt"></div>
+        </div>
+      </div>
+    </section>
+    <script src="../src/js/script.js"></script>
+  </body>
+</html>
